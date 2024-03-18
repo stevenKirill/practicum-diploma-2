@@ -1,6 +1,6 @@
-SELECT courier.login, COUNT(orders.id) AS "deliveryCount"
+SELECT courier.login, COUNT(*) AS "deliveryCount"
 FROM "Couriers" AS courier
-LEFT JOIN "Orders" AS orders ON courier.id = orders."courierId"
+INNER JOIN "Orders" AS orders ON courier.id = orders."courierId"
 WHERE orders."inDelivery" = true
 GROUP BY courier.login;
 

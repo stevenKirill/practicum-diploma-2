@@ -26,3 +26,11 @@ WHEN "inDelivery" = true THEN 1
 ELSE 0 END AS status 
 FROM "Orders";
 ```
+
+Для запуска автотеста необходимо поставить пакет pytest и requests как зависимость
+для запуска теста перейти:
+```bash
+cd practicum_diploma
+python autotest1_test.py
+```
+ или запустить файл прям в pycharm
