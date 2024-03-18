@@ -28,6 +28,12 @@ FROM "Orders";
 ```
 
 Для запуска автотеста необходимо поставить пакет pytest и requests как зависимость
+
+```bash
+pip install -U pytest
+pip install -U requests
+````
+
 для запуска теста перейти:
 ```bash
 cd practicum_diploma
