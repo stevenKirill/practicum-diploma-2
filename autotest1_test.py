@@ -2,6 +2,7 @@ import requests
 import configuration
 
 # Барабан Ирина, 14-я когорта — Финальный проект. Инженер по тестированию плюс
+
 def create_order():
     return requests.post(configuration.BASE_URL + configuration.CREATE_ORDER,
                          json=configuration.body,
